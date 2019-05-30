@@ -102,7 +102,7 @@ public class NLMeansDenoising_ implements PlugInFilter {
         autoEstimate = gd.getNextBoolean();
         usedSigmas = new int[imp.getNSlices()*imp.getNFrames()];
         
-        return IJ.setupDialog(imp, DOES_ALL+FINAL_PROCESSING);
+        return IJ.setupDialog(imp, DOES_STACKS+DOES_ALL+FINAL_PROCESSING);
     }
     
     @Override
